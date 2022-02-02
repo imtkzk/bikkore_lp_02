@@ -1,0 +1,214 @@
+// main: ../style.scss
+
+/*  header
+-------------------------------------------------------*/
+
+.header {
+  position: relative;
+}
+
+.header-top {
+  position: relative;
+  background-color: $color-base;
+}
+
+.header-top > div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: vw-sp(690);
+  height: vw-sp(138);
+}
+
+.header-top-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: vw-sp(200);
+}
+
+.header-logo {
+  width: vw-sp(200);
+}
+
+.header-top-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-login {
+  margin-right: vw-sp(20);
+  width: vw-sp(160);
+}
+
+.header-apply {
+  width: vw-sp(275);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .header-top > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: vw-pc(1200);
+    height: vw-pc(80);
+  }
+
+  .header-top-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: vw-pc(510);
+  }
+
+  .header-logo {
+    width: vw-pc(170);
+  }
+
+  .header-top-right {
+    justify-content: flex-end;
+  }
+
+  .header-login {
+    margin: 0 vw-pc(20);
+    width: vw-pc(120);
+  }
+
+  .header-apply {
+    width: vw-pc(185);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .header-top > div {
+    width: 1200px;
+    height: 80px;
+  }
+
+  .header-top-left {
+    width: 510px;
+  }
+
+  .header-logo {
+    width: 170px;
+  }
+
+  .header-login {
+    margin: 0 20px;
+    width: 120px;
+  }
+
+  .header-apply {
+    width: 185px;
+  }
+}
+
+
+/* ------------------------------------------- login btn - */
+
+.login-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: .1em;
+  width: 100%;
+  height: vw-sp(60);
+  border-color: $color-main;
+  border-style: solid;
+  border-width: vw-sp(2);
+  border-radius: vw-sp(10);
+  color: $color-main;
+  font-family: $font1;
+  font-size: vw-sp(26);
+  font-weight: 700;
+  transition: .3s;
+}
+
+.login-btn:hover {
+  background-color: $color-main;
+  color: $color-base;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .login-btn {
+    height: vw-pc(35);
+    border-width: vw-pc(1);
+    border-radius: vw-pc(5);
+    font-size: vw-pc(15);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .login-btn {
+    height: 35px;
+    border-width: 1px;
+    border-radius: 5px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+}
+
+
+/* ------------------------------------------- header apply btn - */
+
+.btn-header-apply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: vw-sp(90);
+  background-color: #00c068;
+  box-shadow: 0 vw-sp(10) 0 0 #00914f;
+  color: $color-base;
+  font-family: $font1;
+  font-size: vw-sp(26);
+  font-weight: 700;
+  border-radius: vw-sp(10);
+  text-align: center;
+  letter-spacing: .15em;
+  transition: .3s;
+  span {
+    color: #fcff00;
+  }
+}
+
+.btn-header-apply:hover {
+  box-shadow: none;
+  transform: translate3d(0, vw-sp(10), 0);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .btn-header-apply {
+    height: vw-pc(55);
+    font-size: vw-pc(15);
+    border-radius: vw-pc(30);
+    box-shadow: 0 vw-pc(5) 0 0 #00914f;
+  }
+
+  .btn-header-apply:hover {
+    transform: translate3d(0, vw-pc(5), 0);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .btn-header-apply {
+    height: 55px;
+    font-size: 15px; font-size: 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0 5px 0 #00914f;
+  }
+
+  .btn-header-apply:hover {
+    transform: translate3d(0, 5px, 0);
+  }
+}

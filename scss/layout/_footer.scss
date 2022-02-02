@@ -1,0 +1,156 @@
+// main: ../style.scss
+
+/*  footer
+-------------------------------------------------------*/
+
+.footer-top {
+  position: relative;
+  padding: vw-sp(140) vw-sp(30) vw-sp(45) vw-sp(30);
+  background-color: #f8f8f8;
+}
+
+.footer-navi {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-navi a {
+  position: relative;
+  padding: 0 1.5em;
+  color: #000000;
+  font-size: vw-sp(30);
+  font-weight: 500;
+  transition: color .3s;
+}
+
+.footer-navi a:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #000000;
+}
+
+.footer-navi a:last-child:after {
+  content: none;
+}
+
+.footer-navi a:hover {
+  color: $color-main;
+}
+
+.footer-logo {
+  margin: 0 auto vw-sp(90) auto;
+  width: vw-sp(340);
+}
+
+.footer-bottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: vw-sp(200);
+  background-color: #000000;
+  color: $color-base;
+  font-family: $font2;
+  font-size: vw-sp(26);
+  font-weight: 900;
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .footer-navi a:last-child {
+    margin-top: 1.5em;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .footer-top {
+    padding: vw-pc(70) 0 vw-pc(30) 0;
+  }
+
+  .footer-logo {
+    margin: 0 auto vw-pc(45) auto;
+    width: vw-pc(170);
+  }
+
+  .footer-navi a {
+    font-size: vw-pc(15);
+  }
+
+  .footer-bottom {
+    height: vw-pc(100);
+    font-size: vw-pc(13);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .footer-top {
+    padding: 70px 0 30px 0;
+  }
+
+  .footer-logo {
+    margin-bottom: 45px;
+    width: 170px;
+  }
+
+  .footer-navi a {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .footer-bottom {
+    height: 100px;
+    font-size: 13px; font-size: 1.3rem;
+  }
+}
+
+
+
+/* ------------------------------------------- floating - */
+
+.floating {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  transition: opacity .3s;
+  z-index: 999;
+}
+
+.floating a {
+  position: relative;
+  display: block;
+  width: vw-sp(227);
+  height: vw-sp(228);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .floating {
+    bottom: vw-pc(30);
+    right: vw-pc(15);
+  }
+
+
+  .floating a {
+    width: vw-pc(231);
+    height: vw-pc(232);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .floating {
+    bottom: 30px;
+    right: 15px;
+  }
+
+  .floating a {
+    width: 231px;
+    height: 232px;
+  }
+}

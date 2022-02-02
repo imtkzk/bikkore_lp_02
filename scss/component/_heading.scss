@@ -1,0 +1,61 @@
+// main: ../style.scss;
+
+/* ------------------------------------------- sechead - */
+
+.sechead {
+  margin: 0 auto;
+  width: vw-sp(694);
+}
+
+.sechead-jp {
+  font-family: $font2;
+  font-size: vw-sp(54);
+  font-weight: 900;
+  text-align: center;
+  text-indent: .15em;
+  line-height: 1.65em;
+  letter-spacing: .15em;
+}
+
+.sechead-en {
+  margin-top: 1em;
+  font-family: $font2;
+  font-size: vw-sp(36);
+  font-weight: 900;
+  text-align: center;
+  text-indent: .15em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sechead {
+    width: vw-pc(1000);
+  }
+
+  .sechead-jp {
+    font-size: vw-pc(36);
+  }
+
+  .sechead-en {
+    margin-top: 2em;
+    font-size: vw-pc(18);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sechead {
+    width: 1000px;
+  }
+
+  .sechead-jp {
+    font-size: 36px; font-size: 3.6rem;
+  }
+
+  .sechead-en {
+    font-size: 18px; font-size: 1.8rem;
+  }
+}

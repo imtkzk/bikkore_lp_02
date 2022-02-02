@@ -1,0 +1,89 @@
+// main: ../style.scss
+
+/*  #hero
+-------------------------------------------------------*/
+
+.hero {
+  position: relative;
+  z-index: 3;
+}
+
+.hero-content {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-image {
+  display: none;
+}
+
+.hero-period {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: vw-sp(100);
+  background-color: $color-main;
+  color: $color-base;
+  font-family: $font2;
+  font-size: vw-sp(36);
+  font-weight: 800;
+  letter-spacing: 0;
+  span {
+    font-size: vw-sp(44);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .hero {
+    background-image: url(../img/hero/bg.jpg);
+    background-image: image-set(url(../img/hero/bg.jpg) 1x, url(../img/hero/bg-2x.jpg) 2x);
+    background-image: -webkit-image-set(url(../img/hero/bg.jpg) 1x, url(../img/hero/bg-2x.jpg) 2x);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-content {
+    width: vw-pc(1225);
+  }
+
+  .hero-image {
+    position: absolute;
+    right: vw-pc(15);
+    bottom: vw-pc(-60);
+    display: block;
+    width: vw-pc(373);
+    z-index: 2;
+  }
+
+  .hero-period {
+    height: vw-pc(60);
+    font-size: vw-pc(18);
+    span {
+      font-size: vw-pc(28);
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .hero-content {
+    width: 1225px;
+  }
+
+  .hero-image {
+    right: 15px;
+    bottom: -60px;
+    width: 373px;
+  }
+
+  .hero-period {
+    height: 60px;
+    font-size: 18px; font-size: 1.8rem;
+    span {
+      font-size: 28px; font-size: 2.8rem;
+    }
+  }
+}

@@ -1,0 +1,161 @@
+// main: ../style.scss
+
+/*  RESET CSS
+------------------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  background-repeat: no-repeat;
+}
+
+::before,
+::after {
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+html, body {
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  overflow-y: scroll;
+  cursor: default;
+}
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-print-color-adjust: exact;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1em;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, main, menu, nav, section, summary {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  font-weight: normal;
+}
+
+td, th {
+  padding: 0;
+}
+
+blockquote {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+  cursor: pointer;
+}
+
+a:active, a:hover {
+  outline-width: 0;
+}
+
+a:focus, *:focus {
+  outline: none;
+}
+
+img {
+  border-style: none;
+  vertical-align: bottom;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+[type="text"],
+[type="tel"],
+[type="email"],
+[type="date"],
+[type="number"],
+[type="submit"],
+[type="button"],
+button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance:textfield;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand{
+  display: none;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"], [role="button"] {
+  cursor: pointer;
+}
+
+/* IEのinput要素に出てくるマークを消去 */
+input::-ms-clear {
+  visibility: hidden;
+}
+
+/* IEのinput要素に出てくるマークを消去 */
+input::-ms-reveal {
+  visibility: hidden;
+}

@@ -1,0 +1,147 @@
+// main: ../style.scss
+
+/*  #entry
+-------------------------------------------------------*/
+
+.sec--entry {
+  padding: vw-sp(100) 0;
+}
+
+.entry {
+  margin: 0 auto;
+  padding: vw-sp(75) vw-sp(35) vw-sp(90) vw-sp(35);
+  width: vw-sp(694);
+  background-color: #fff8ec;
+  border-color: $color-main;
+  border-style: solid;
+  border-width: vw-sp(12);
+  border-radius: vw-sp(26)
+}
+
+.entry-content {
+  margin-bottom: vw-sp(30);
+}
+
+.entry-title {
+  margin-bottom: vw-sp(50);
+  font-size: vw-sp(36);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.8em;
+}
+
+.entry-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto vw-sp(45) auto;
+  width: 100%;
+}
+
+.entry-form dt {
+  margin-bottom: 1em;
+  width: 100%;
+  font-size: vw-sp(32);
+  font-weight: 700;
+}
+
+.entry-form dd {
+  width: 100%;
+}
+
+.entry-btn {
+  margin: 0 auto;
+  width: vw-sp(600);
+}
+
+@media screen and (max-width: $breakpoint1-max) {
+
+  .entry-btn .btn-apply {
+    font-size: vw-sp(36);
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--entry {
+    padding: vw-pc(95) 0 vw-pc(115) 0;
+  }
+
+  .entry {
+    padding: vw-pc(45) vw-pc(20) vw-pc(55) vw-pc(20);
+    width: vw-pc(1000);
+    border-width: vw-pc(8);
+    border-radius: vw-pc(13);
+  }
+
+  .entry-content {
+    margin-bottom: vw-pc(25);
+  }
+
+  .entry-title {
+    margin-bottom: vw-pc(20);
+    font-size: vw-pc(18);
+  }
+
+  .entry-form {
+    flex-wrap: nowrap;
+    margin: 0 auto vw-pc(20) auto;
+    width: vw-pc(630);
+  }
+
+  .entry-form dt {
+    margin-bottom: 0;
+    width: vw-pc(150);
+    font-size: vw-pc(15);
+  }
+
+  .entry-form dd {
+    width: vw-pc(480);
+  }
+
+  .entry-btn {
+    width: vw-pc(460);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--entry {
+    padding: 100px;
+  }
+
+  .entry {
+    padding: 45px 20px 55px 20px;
+    width: 1000px;
+    border-width: 8px;
+    border-radius: 13px;
+  }
+
+  .entry-content {
+    margin-bottom: 25px;
+  }
+
+  .entry-title {
+    margin-bottom: 20px;
+    font-size: 18px; font-size: 1.8rem;
+  }
+
+  .entry-form {
+    margin: 0 auto 20px auto;
+    width: 630px;
+  }
+
+  .entry-form dt {
+    width: 150px;
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .entry-form dd {
+    width: 480px;
+  }
+
+  .entry-btn {
+    width: 460px;
+  }
+}

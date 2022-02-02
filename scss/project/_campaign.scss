@@ -1,0 +1,229 @@
+// main: ../style.scss
+
+/*  #campaign
+-------------------------------------------------------*/
+
+.sec--campaign {
+  padding: vw-sp(180) 0 vw-sp(180) 0;
+  background-color: #fff2da;
+}
+
+.campaign {
+  position: relative;
+  margin: 0 auto;
+  width: vw-sp(694);
+}
+
+.campaign > div {
+  position: relative;
+}
+
+.campaign-label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto vw-sp(70) auto;
+  width: vw-sp(280);
+  height: vw-sp(280);
+  background-color: $color-main;
+  border-radius: 50%;
+  color: $color-base;
+  font-family: $font2;
+  font-size: vw-sp(48);
+  font-weight: 900;
+}
+
+.campaign-head {
+  margin-bottom: vw-sp(50);
+  padding-left: vw-sp(15);
+  font-family: $font2;
+  font-size: vw-sp(62);
+  font-weight: 900;
+  line-height: 1.66em;
+  letter-spacing: .05em;
+  span.num {
+    font-size: vw-sp(103);
+  }
+  span.big {
+    font-size: vw-sp(97);
+  }
+  span.hosoku {
+    position: relative;
+    top: -.5em;
+    left: .3em;
+    font-family: $font1;
+    font-size: vw-sp(24);
+    font-weight: 400;
+    line-height: 1em;
+  }
+}
+
+.campaign-apply {
+  text-align: center;
+}
+
+.campaign-apply-head {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.15em;
+  padding: 0 .5em 0 1em;
+  font-size: vw-sp(48);
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5em;
+  letter-spacing: .15em;
+  span.accent {
+    background: linear-gradient(transparent 50%, #fcff00 50%);
+  }
+}
+
+.campaign-apply-head:before,
+.campaign-apply-head:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: vw-sp(4);
+  height: 40%;
+  background-color: $color-text;
+}
+
+.campaign-apply-head:before {
+  left: 0;
+  transform: rotate(-35deg);
+}
+
+.campaign-apply-head:after {
+  right: 0;
+  transform: rotate(35deg);
+}
+
+.campaign-apply-btn {
+  margin: 0 auto;
+  width: vw-sp(690);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--campaign {
+    padding: vw-pc(140) 0 vw-pc(80) 0;
+  }
+
+  .campaign {
+    width: vw-pc(1000);
+  }
+
+  .campaign:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: vw-pc(-80);
+    display: inline-block;
+    width: vw-pc(430);
+    height: vw-pc(402);
+    background-image: url(../img/campaign/businessman.png);
+    background-image: image-set(url(../img/campaign/businessman.png) 1x, url(../img/campaign/businessman-2x.png) 2x);
+    background-image: -webkit-image-set(url(../img/campaign/businessman.png) 1x, url(../img/campaign/businessman-2x.png) 2x);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .campaign > div {
+    margin-left: auto;
+    width: vw-pc(520);
+  }
+
+  .campaign-label {
+    position: absolute;
+    top: vw-pc(30);
+    left: vw-pc(-115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: vw-pc(200);
+    height: vw-pc(200);
+    font-size: vw-pc(36);
+  }
+
+  .campaign-head {
+    margin-bottom: vw-pc(35);
+    padding-left: vw-pc(115);
+    font-size: vw-pc(36);
+    span.num {
+      font-size: vw-pc(60);
+    }
+    span.big {
+      font-size: vw-pc(56);
+    }
+    span.hosoku {
+      font-size: vw-pc(13);
+    }
+  }
+
+  .campaign-apply-head {
+    font-size: vw-pc(24);
+  }
+
+  .campaign-apply-head:before,
+  .campaign-apply-head:after {
+    height: 50%;
+    width: 1px;
+  }
+
+  .campaign-apply-btn {
+    width: vw-pc(460);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--campaign {
+    padding: 140px 0 80px 0;
+  }
+
+  .campaign {
+    width: 1000px;
+  }
+
+  .campaign:before {
+    bottom: -80px;
+    width: 430px;
+    height: 402px;
+  }
+
+  .campaign > div {
+    width: 520px;
+  }
+
+  .campaign-label {
+    top: 30px;
+    left: -115px;
+    width: 200px;
+    height: 200px;
+    font-size: 36px; font-size: 3.6rem;
+  }
+
+  .campaign-head {
+    margin-bottom: 35px;
+    padding-left: 115px;
+    font-size: 36px; font-size: 3.6rem;
+    span.num {
+      font-size: 60px; font-size: 6.0rem;
+    }
+    span.big {
+      font-size: 56px; font-size: 5.6rem;
+    }
+    span.hosoku {
+      font-size: 13px; font-size: 1.3rem;
+    }
+  }
+
+  .campaign-apply-head {
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+  .campaign-apply-btn {
+    width: 460px;
+  }
+}

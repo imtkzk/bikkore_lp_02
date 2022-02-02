@@ -1,0 +1,210 @@
+// main: ../style.scss;
+
+/* ------------------------------------------- form - */
+
+.form-desc {
+  font-size: vw-sp(26);
+  text-align: center;
+  line-height: 1.7em;
+}
+
+.form-desc a {
+  position: relative;
+  display: inline-block;
+  color: #f72a2a;
+}
+
+.form-desc a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  transition: background-color .3s;
+}
+
+.form-desc a:hover:before {
+  background-color: #f72a2a;
+}
+
+.form-agree {
+  margin: vw-sp(45) 0 0 0;
+  font-size: vw-sp(31);
+  font-weight: 700;
+  line-height: 1.5em;
+  cursor: pointer;
+  label {
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .form-desc {
+    font-size: vw-pc(14);
+  }
+
+  .form-agree {
+    margin: vw-pc(25) 0 0 0;
+    font-size: vw-pc(15);
+    text-align: center;
+    line-height: vw-pc(22);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .form-desc {
+    font-size: 14px; font-size: 1.4rem;
+  }
+
+  .form-agree {
+    margin: 25px 0 0 0;
+    font-size: 15px; font-size: 1.5rem;
+    line-height: 22px;
+  }
+}
+
+
+/* ------------------------------------------- input - */
+
+.form input[type="email"] {
+  padding: .6em 1em;
+  background-color: $color-base;
+  border: 1px solid #cccccc;
+  width: 100%;
+  color: $color-text;
+  font-family: $font1;
+  font-size: vw-sp(32);
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .form input[type="email"] {
+    font-size: vw-pc(15);
+  }
+}
+
+
+@media screen and (min-width: $breakpoint2) {
+
+  .form input[type="email"] {
+    font-size: 15px;
+  }
+}
+
+/* ------------------------------------------- checkbox - */
+
+.form-check label ~ label {
+  margin-left: vw-sp(30);
+}
+
+.form-check input[type=checkbox] {
+  margin-right: vw-sp(16);
+}
+
+.form-check input[type=checkbox] {
+  display: none;
+}
+
+.form-check label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding-left: vw-sp(60);
+}
+
+.form-check input[type=checkbox]  + label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: vw-sp(40);
+  height: vw-sp(40);
+  background-color: $color-base;
+  border: 1px solid #ccc;
+}
+
+.form-check input[type=checkbox]  + label::after {
+  content: '';
+  position: absolute;
+  top: vw-sp(4);
+  left: vw-sp(14);
+  display: block;
+  width: vw-sp(12);
+  height: vw-sp(20);
+  border-right: vw-sp(6) solid #f72a2a;
+  border-bottom: vw-sp(6) solid #f72a2a;
+  opacity: 0;
+  transform: rotate(45deg);
+  transition: .3s;
+}
+
+.form-check input[type=checkbox]:checked + label::after {
+  opacity: 1;
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .form-check label ~ label {
+    margin-left: vw-pc(15);
+  }
+
+  .form-check input[type=checkbox] {
+    margin-right: vw-pc(8);
+  }
+
+  .form-check label {
+    padding-left: vw-pc(35);
+    line-height: vw-pc(20);
+  }
+
+  .form-check input[type=checkbox]  + label::before {
+    width: vw-pc(20);
+    height: vw-pc(20);
+  }
+
+  .form-check input[type=checkbox]  + label::after {
+    top: vw-pc(2);
+    left: vw-pc(7);
+    width: vw-pc(6);
+    height: vw-pc(10);
+    border-right: vw-pc(3) solid #f72a2a;
+    border-bottom: vw-pc(3) solid #f72a2a;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+
+  .form-check label ~ label {
+    margin-left: 15px;
+  }
+
+  .form-check input[type=checkbox] {
+    margin-right: 8px;
+  }
+
+  .form-check label {
+    padding-left: 35px;
+    line-height: 20px;
+  }
+
+  .form-check input[type=checkbox]  + label::before {
+    width: 20px;
+    height: 20px;
+  }
+
+  .form-check input[type=checkbox]  + label::after {
+    top: 2px;
+    left: 7px;
+    width: 6px;
+    height: 10px;
+    border-right: 3px solid #f72a2a;
+    border-bottom: 3px solid #f72a2a;
+  }
+}

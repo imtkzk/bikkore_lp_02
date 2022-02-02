@@ -1,0 +1,25 @@
+// main: ../style.scss;
+
+$font1: 'Noto Sans JP', sans-serif;
+$font2: 'M PLUS 1p', sans-serif;
+$color-base: #ffffff;
+$color-text: #333333;
+$color-main: #ff8003;
+$color-green: #00c068;
+
+$breakpoint1: 751px;
+$breakpoint1-max: 750px;
+$breakpoint2: 1441px;
+$breakpoint2-max: 1440px;
+$sp-width: 750;
+$pc-width: 1440;
+
+@function vw-sp($size, $viewport:750) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}
+
+@function vw-pc($size, $viewport:1440) {
+  $rate: 100 / $viewport;
+  @return $rate * $size * 1vw;
+}

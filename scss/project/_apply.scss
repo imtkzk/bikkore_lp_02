@@ -1,0 +1,189 @@
+// main: ../style.scss
+
+/*  #apply
+-------------------------------------------------------*/
+
+.sec--apply {
+  z-index: 3;
+}
+
+.sec--apply01 {
+  padding: vw-sp(55) 0 vw-sp(60) 0;
+  background-color: #fffcf6;
+}
+
+.sec--apply02 {
+  padding: vw-sp(125) 0 vw-sp(145) 0;
+  background-image: url(../img/apply/bg_sp.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.apply {
+  margin: 0 auto;
+  width: vw-sp(694);
+  text-align: center;
+}
+
+.apply-head {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.15em;
+  padding: 0 .5em 0 1em;
+  font-size: vw-sp(48);
+  font-weight: 700;
+  letter-spacing: .15em;
+  span.big {
+    font-size: 1.5em;
+  }
+}
+
+.sec--apply01 .apply-head {
+  color: #00c068;
+  span.big {
+    position: relative;
+    left: -.05em;
+    font-family: $font2;
+    font-weight: 800;
+    font-style: italic;
+  }
+}
+
+.sec--apply02 .apply-head {
+  color: $color-base;
+}
+
+.sec--apply02 .apply-head span.accent {
+  color: #fcff00;
+}
+
+.apply-head:before,
+.apply-head:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 1px;
+  height: 50%;
+}
+
+.apply-head:before {
+  left: 0;
+  transform: rotate(-35deg);
+}
+
+.apply-head:after {
+  right: 0;
+  transform: rotate(35deg);
+}
+
+.sec--apply01 .apply-head:before,
+.sec--apply01 .apply-head:after {
+  background-color: #00c068;
+}
+
+.sec--apply02 .apply-head:before,
+.sec--apply02 .apply-head:after {
+  background-color: $color-base;
+}
+
+.apply-btn {
+  margin: 0 auto;
+  width: vw-sp(690);
+}
+
+.apply-caution {
+  margin: vw-sp(45) auto 0 auto;
+  width: vw-sp(690);
+}
+
+.apply-caution p {
+  margin-bottom: 1.38em;
+  font-size: vw-sp(26);
+}
+
+.apply-caution-list > li {
+  padding-left: 1em;
+  font-size: vw-sp(26);
+  text-indent: -1em;
+  line-height: 1.38em;
+}
+
+.apply-caution-list > li:nth-child(n + 2) {
+  margin-top: 1.28em;
+}
+
+.apply-caution-list > li:before {
+  content: '・';
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--apply01 {
+    padding: vw-pc(40) 0 vw-pc(35) 0;
+  }
+
+  .sec--apply02 {
+    padding: vw-pc(95) 0 vw-pc(115) 0;
+  }
+
+  .apply {
+    width: vw-pc(1000);
+  }
+
+  .apply-head {
+    font-size: vw-pc(24);
+  }
+
+  .apply-btn {
+    width: vw-pc(460);
+  }
+
+  .apply-caution {
+    margin: vw-pc(25) auto 0 auto;
+    width: vw-pc(570);
+  }
+
+  .apply-caution p {
+    font-size: vw-pc(15);
+  }
+
+  .apply-caution-list > li {
+    font-size: vw-pc(15);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--apply01 {
+    padding: 40px 0 35px 0;
+  }
+
+  .sec--apply02 {
+    padding: 95px 0 115px 0;
+  }
+
+  .apply {
+    width: 1000px;
+  }
+
+  .apply-head {
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+  .apply-btn {
+    width: 460px;
+  }
+
+  .apply-caution {
+    margin: 25px auto 0 auto;
+    width: 570px;
+  }
+
+  .apply-caution p {
+    font-size: 15px; font-size: 1.5rem;
+  }
+
+  .apply-caution-list > li {
+    font-size: 15px; font-size: 1.5rem;
+  }
+}

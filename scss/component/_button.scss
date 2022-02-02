@@ -1,0 +1,60 @@
+// main: ../style.scss;
+
+/*  button
+-------------------------------------------------------*/
+
+/* ------------------------------------------- apply - */
+
+.btn-apply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: vw-sp(140);
+  background-color: #00c068;
+  border-radius: vw-sp(70);
+  box-shadow: 0 vw-sp(10) 0 0 #00914f;
+  color: $color-base;
+  font-family: $font1;
+  font-size: vw-sp(44);
+  font-weight: 700;
+  border-radius: vw-sp(70);
+  text-align: center;
+  letter-spacing: .15em;
+  transition: .3s;
+  span {
+    color: #fcff00;
+  }
+}
+.btn-apply:hover {
+  box-shadow: none;
+  transform: translate3d(0, vw-sp(10), 0);
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .btn-apply {
+    height: vw-pc(70);
+    border-radius: vw-pc(35);
+    box-shadow: 0 vw-pc(5) 0 0 #00914f;
+    font-size: vw-pc(24);
+  }
+
+  .btn-apply:hover {
+    transform: translate3d(0, vw-pc(5), 0);
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .btn-apply {
+    height: 70px;
+    border-radius: 35px;
+    box-shadow: 0 5px 0 #00914f;
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+  .btn-apply:hover {
+    transform: translate3d(0, 5px, 0);
+  }
+}

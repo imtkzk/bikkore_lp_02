@@ -1,0 +1,145 @@
+// main: ../style.scss
+
+/*  #whats
+-------------------------------------------------------*/
+
+.sec--whats {
+  padding: vw-sp(75) 0 vw-sp(210) 0;
+  background-color: $color-base;
+  z-index: 3;
+}
+
+.whats {
+  position: relative;
+  margin: 0 auto;
+  width: vw-sp(694);
+  z-index: 2;
+}
+
+.whats:after {
+  content: '';
+  position: absolute;
+  right: vw-sp(35);
+  bottom: vw-sp(-210);
+  display: inline-block;
+  width: vw-sp(223);
+  height: vw-sp(241);
+  background-image: url(../img/whats/businessman_sp.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.whats-head {
+  margin-bottom: vw-sp(45);
+}
+
+.whats-head-en {
+  margin: 0 auto vw-sp(35) auto;
+  width: vw-sp(677);
+}
+
+.whats-head-jp {
+  position: relative;
+  font-family: $font2;
+  font-size: vw-sp(48);
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: .15em;
+}
+
+.whats-content p {
+  font-size: vw-sp(26);
+  line-height: 1.84em;
+  span.bold {
+    font-weight: 700;
+  }
+  span.color {
+    color: $color-main;
+  }
+}
+
+@media screen and (min-width: $breakpoint1) {
+
+  .sec--whats {
+    padding: vw-pc(75) 0;
+  }
+
+  .whats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: vw-pc(1000);
+  }
+
+  .whats:after {
+    right: vw-pc(-100);
+    bottom: vw-pc(-75);
+    width: vw-pc(214);
+    height: vw-pc(230);
+    background-image: url(../img/whats/businessman.png);
+    background-image: image-set(url(../img/whats/businessman.png) 1x, url(../img/whats/businessman-2x.png) 2x);
+    background-image: -webkit-image-set(url(../img/whats/businessman.png) 1x, url(../img/whats/businessman-2x.png) 2x);
+  }
+
+  .whats-head {
+    margin-bottom: 0;
+    width: vw-pc(339);
+  }
+
+  .whats-head-en {
+    margin-bottom: vw-pc(30);
+    width: 100%;
+  }
+
+  .whats-head-jp {
+    font-size: vw-pc(24);
+  }
+
+  .whats-content {
+    width: vw-pc(580);
+  }
+
+  .whats-content p {
+    font-size: vw-pc(18);
+    line-height: 2.66em;
+  }
+}
+
+@media screen and (min-width: $breakpoint2) {
+
+  .sec--whats {
+    padding: 75px 0;
+  }
+
+  .whats {
+    width: 1000px;
+  }
+
+  .whats:after {
+    right: -100px;
+    bottom: -75px;
+    width: 214px;
+    height: 230px;
+  }
+
+  .whats-head {
+    width: 339px;
+  }
+
+  .whats-head-en {
+    margin-bottom: 30px;
+  }
+
+  .whats-head-jp {
+    font-size: 24px; font-size: 2.4rem;
+  }
+
+  .whats-content {
+    width: 580px;
+  }
+
+  .whats-content p {
+    font-size: 18px; font-size: 1.8rem;
+  }
+}

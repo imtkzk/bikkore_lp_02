@@ -1204,7 +1204,7 @@ a.on--opa:hover {
 
 .campaign-head {
   margin-bottom: 6.66667vw;
-  padding-left: 2vw;
+  /*padding-left: vw-sp(15);*/
   font-family: "M PLUS 1p", sans-serif;
   font-size: 8.26667vw;
   font-weight: 900;
@@ -1314,7 +1314,7 @@ a.on--opa:hover {
   }
   .campaign-head {
     margin-bottom: 2.43056vw;
-    padding-left: 7.98611vw;
+    /*padding-left: vw-pc(115);*/
     font-size: 2.5vw;
   }
   .campaign-head span.num {
@@ -1364,7 +1364,7 @@ a.on--opa:hover {
   }
   .campaign-head {
     margin-bottom: 35px;
-    padding-left: 115px;
+    /*padding-left: 115px;*/
     font-size: 36px;
     font-size: 3.6rem;
   }

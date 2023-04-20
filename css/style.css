@@ -498,39 +498,43 @@ a.on--opa:hover {
 
 /* ------------------------------------------- floating - */
 .floating {
+  background: rgba(255, 255, 255, 0.5);
+  padding-top: 2.66667vw;
+  padding-bottom: 2.66667vw;
+  width: 100%;
   position: fixed;
   bottom: 0;
-  right: 0;
   transition: opacity .3s;
   z-index: 999;
 }
 
 .floating a {
+  margin: auto;
   position: relative;
   display: block;
-  width: 30.26667vw;
-  height: 30.4vw;
+  width: 84vw;
+  height: 13.86667vw;
 }
 
 @media screen and (min-width: 751px) {
   .floating {
-    bottom: 2.08333vw;
-    right: 1.04167vw;
+    padding-top: 0.69444vw;
+    padding-bottom: 0.69444vw;
   }
   .floating a {
-    width: 16.04167vw;
-    height: 16.11111vw;
+    width: 31.94444vw;
+    height: 5.27778vw;
   }
 }
 
 @media screen and (min-width: 1441px) {
   .floating {
-    bottom: 30px;
-    right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .floating a {
-    width: 231px;
-    height: 232px;
+    width: 460px;
+    height: 76px;
   }
 }
 
